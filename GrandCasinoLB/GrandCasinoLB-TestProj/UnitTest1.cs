@@ -1,4 +1,4 @@
-namespace GrandCasinoLB_TestProject
+namespace GrandCasinoLB_TestProj
 {
     [TestClass]
     public class UnitTest1
