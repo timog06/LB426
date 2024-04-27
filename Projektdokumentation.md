@@ -5,3 +5,8 @@
 
 ## Scrum Board
 
+| Backlog | To Do | In Progress | Testing | Done |
+| ------- | ------- | ------- | ------- | ------- |
+|         |         |         |         |         |
+|         |         |         |         |         |
+|         |         |         |         |         |
