@@ -21,5 +21,10 @@
             Console.WriteLine($"You turned {amount}$ into chips.");
             Console.ReadKey();
         }
+
+        public void PlayGame()
+        {
+            
+        }
     }
 }

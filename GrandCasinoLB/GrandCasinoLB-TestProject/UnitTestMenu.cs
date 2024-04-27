@@ -1,4 +1,5 @@
 using GrandCasinoLB;
+using System.Runtime.CompilerServices;
 
 namespace GrandCasinoLB_TestProject
 {
@@ -47,6 +48,25 @@ namespace GrandCasinoLB_TestProject
             // Assert
             Assert.IsTrue(output.Contains("How much money do you want to turn into chips?"));
             Assert.IsTrue(output.Contains("You turned 1000 into chips."));
+        }
+
+        [TestMethod]
+        public void Play_ShouldDisplayGameOptions()
+        {
+            // Arrange
+            var casinoMenu = new CasinoMenu();
+            int RouletteOption = 1;
+
+            // Act
+            string output = GetConsoleOutput(() =>
+            {
+                casinoMenu.PlayGame();
+                Console.WriteLine(RouletteOption);
+            });
+
+            // Assert
+            Assert.IsTrue(output.Contains("Roulette (1) / Slot Machine (2)"));
+            Assert.IsTrue(output.Contains("You chose Roulette!"));
         }
     }
 }
