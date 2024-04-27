@@ -14,7 +14,12 @@
         }
         public void Bank()
         {
-            
+            Console.Clear();
+            Console.WriteLine("How much money do you want to turn into chips?");
+            Console.Write("Enter amount: ");
+            string amount = Console.ReadLine();
+            Console.WriteLine($"You turned {amount}$ into chips.");
+            Console.ReadKey();
         }
     }
 }
