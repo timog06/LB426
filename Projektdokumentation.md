@@ -2,6 +2,11 @@
 
 ## User Stories (Story Cards)
 
+| ID / Name | Priorität | In Progress | Testing | Done |
+| ------- | ------- | ------- | ------- | ------- |
+|         |         |         |         |         |
+|         |         |         |         |         |
+|         |         |         |         |         |
 
 ## Scrum Board
 
