@@ -24,7 +24,25 @@
 
         public void PlayGame()
         {
-            
+            Console.Clear();
+            Console.WriteLine("Roulette (1) / Slot Machine (2)");
+            Console.Write("Choose: ");
+            string gameChoice = Console.ReadLine();
+
+            switch (gameChoice)
+            {
+                case "1":
+                    Console.WriteLine("You chose Roulette!");
+                    break;
+                case "2":
+                    Console.WriteLine("You chose Slot Machine!");
+                    break;
+                default:
+                    Console.WriteLine("Invalid choice, please try again.");
+                    break;
+            }
+
+            Console.ReadKey();
         }
     }
 }
