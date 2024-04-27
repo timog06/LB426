@@ -5,7 +5,10 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrandCasinoLB", "GrandCasinoLB\GrandCasinoLB.csproj", "{5933DBE9-F1F5-4452-8C63-EC17DF3EE738}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrandCasinoLB-TestProject", "GrandCasinoLB-TestProject\GrandCasinoLB-TestProject.csproj", "{66816796-507D-4B9B-9632-8408E8913C59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrandCasinoLB-TestProject", "GrandCasinoLB-TestProject\GrandCasinoLB-TestProject.csproj", "{66816796-507D-4B9B-9632-8408E8913C59}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5933DBE9-F1F5-4452-8C63-EC17DF3EE738} = {5933DBE9-F1F5-4452-8C63-EC17DF3EE738}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
