@@ -4,7 +4,7 @@ J. Burlet, T. Goedertier
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|27.04.2024| 0.0.1   |Visual Studio Projekt wurde erstellt und auf Main gepusht.|
+|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
 |       | ...     |                                                              |
 |       | 1.0.0   |                                                              |
 
@@ -12,7 +12,7 @@ J. Burlet, T. Goedertier
 
 ### 1.1 Ihr Projekt
 
-Wir machen 
+✍️ Beschreiben Sie Ihr Projekt in einem griffigen Satz.
 
 ### 1.2 User Stories
 
