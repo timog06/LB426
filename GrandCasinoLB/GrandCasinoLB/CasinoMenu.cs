@@ -12,5 +12,9 @@
             Console.WriteLine("3. Quit");
             Console.ReadLine();
         }
+        public void Bank()
+        {
+            
+        }
     }
 }

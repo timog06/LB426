@@ -31,6 +31,22 @@ namespace GrandCasinoLB_TestProject
             return writer.ToString();
         }
 
+        [TestMethod]
+        public void Bank_ShouldConvertMoneyToChips()
+        {
+            // Arrange
+            var casinoMenu = new CasinoMenu();
 
+            // Act
+            string output = GetConsoleOutput(() =>
+            {
+                casinoMenu.Bank();
+                Console.WriteLine("1000");
+            });
+
+            // Assert
+            Assert.IsTrue(output.Contains("How much money do you want to turn into chips?"));
+            Assert.IsTrue(output.Contains("You turned 1000 into chips."));
+        }
     }
 }
