@@ -39,7 +39,7 @@ namespace GrandCasinoLB
             }
         }
 
-        public void PlayGame()
+        private void PlayGame()
         {
             Console.Clear();
             Console.WriteLine("Roulette (1) / Slot Machine (2)");
@@ -49,16 +49,32 @@ namespace GrandCasinoLB
             switch (gameChoice)
             {
                 case "1":
-                    Console.WriteLine("You chose Roulette!");
+                    // PlayRoulette();
                     break;
                 case "2":
-                    Console.WriteLine("You chose Slot Machine!");
+                    PlaySlotMachine();
                     break;
+                case "3":
+                    // Add more games if wanted
                 default:
                     Console.WriteLine("Invalid choice, please try again.");
+                    Console.ReadKey();
                     break;
             }
-            Console.ReadKey();
+        }
+
+        /*
+        private void PlayRoulette()
+        {
+            Roulette roulette = new Roulette();
+            roulette.PlayGame();
+        }
+        */
+
+        private void PlaySlotMachine()
+        {
+            SlotMachine slotMachine = new SlotMachine();
+            slotMachine.PlayGame();
         }
 
         public void Bank()
