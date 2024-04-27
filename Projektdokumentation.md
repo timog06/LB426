@@ -4,13 +4,15 @@
 
 | ID | Priorität | Wer/Was/warum |
 | ------- | ------- | ------- | 
-|1|         |Als Spieler möchte ich die Möglichkeit haben zwischen den Spielen auswählen zu können.|
-|2|         |Als Spieler möchte ich Slot Machines spielen können.|
-|3|         |Als Spieler möchte ich Roulette spielen können.|
-|4|         |         |
-|5|         |         |
-||         |Als Developer möchte ich, dass es so programmiert ist, dammit ich einfach kann weitere Spiele hinzufügen.|
-||         |         |
+|1.1|Mittel|Als Spieler möchte ich eine art 'Main Menu' haben.|
+|1.2|Hoch|Als Spieler möchte ich zwischen Roulette und Slot Machine auswählen können.|
+|1.3|Hoch|Als Spieler möchte ich Geld in Chips umwandeln können.|
+|1.4|Tief|Als Spieler möchte ich die Anwendung beenden können.|
+|1.5|Tief|Als Spieler möchte ich jederzeit zurück zum Menu kommen können.
+|2.1|Hoch|Als Spieler möchte ich Slot Machines spielen können.|
+|3.1|Hoch|Als Spieler möchte ich Roulette spielen können.|
+|4.1|         |         |
+|5.1|         |Als Developer möchte ich, dass es so programmiert ist, dammit ich einfach kann weitere Spiele hinzufügen.|
 
 ## Scrum Board
 
