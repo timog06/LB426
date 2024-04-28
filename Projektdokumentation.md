@@ -1,6 +1,8 @@
 # Projektdokumentation
 
-## User Stories (Story Cards)
+von Julius Burlet und Timo Goedertier
+
+## User Stories
 
 | ID | Priorität | Wer/Was/warum |
 | ------- | ------- | ------- | 
@@ -22,5 +24,7 @@
 |         |       |             |         |1.3|
 |         |       |             |         |1.4|
 |         |       |             |         |2.1|
+|         |       |             |         |4.1|
 |         |       |             |         |      |
+
   
