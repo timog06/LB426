@@ -4,6 +4,13 @@ namespace GrandCasinoLB
 {
     public class CasinoMenu
     {
+        private int _chips;
+
+        public CasinoMenu()
+        {
+            _chips = 0;
+        }
+
         public void Run()
         {
             bool running = true;
@@ -12,7 +19,7 @@ namespace GrandCasinoLB
             {
                 Console.Clear();
                 Console.Title = "Grand Casino LB";
-                Console.WriteLine("Welcome to Grand Casino LB!");
+                Console.WriteLine($"Welcome to Grand Casino LB! You have {_chips} chips.");
                 Console.WriteLine("1. Play");
                 Console.WriteLine("2. Bank");
                 Console.WriteLine("3. Quit");
@@ -41,6 +48,13 @@ namespace GrandCasinoLB
 
         public void PlayGame()
         {
+            if (_chips == 0)
+            {
+                Console.WriteLine("You can't play without chips.");
+                Console.ReadKey();
+                return; 
+            }
+
             Console.Clear();
             Console.WriteLine("Roulette (1) / Slot Machine (2)");
             Console.Write("Choose: ");
@@ -49,13 +63,12 @@ namespace GrandCasinoLB
             switch (gameChoice)
             {
                 case "1":
-                    // PlayRoulette();
+                    Console.WriteLine("Roulette is currently unavailable.");
+                    Console.ReadKey();
                     break;
                 case "2":
                     PlaySlotMachine();
                     break;
-                case "3":
-                    // Add more games if wanted
                 default:
                     Console.WriteLine("Invalid choice, please try again.");
                     Console.ReadKey();
@@ -63,29 +76,40 @@ namespace GrandCasinoLB
             }
         }
 
-        /*
-        private void PlayRoulette()
-        {
-            Roulette roulette = new Roulette();
-            roulette.PlayGame();
-        }
-        */
-
         private void PlaySlotMachine()
         {
-            SlotMachine slotMachine = new SlotMachine();
-            slotMachine.PlayGame();
+            if (_chips < 10) 
+            {
+                Console.WriteLine("You need at least 10 chips to play the Slot Machine.");
+                Console.ReadKey();
+                return; 
+            }
+
+            SlotMachine slotMachine = new SlotMachine(_chips);
+            slotMachine.PlayGame(); 
+
+            int winnings = slotMachine.CalculateWinnings(new int[3], 10); 
+            _chips += winnings; 
         }
 
-        public void Bank()
+        private void Bank()
         {
             Console.Clear();
             Console.WriteLine("How much money do you want to turn into chips?");
             Console.Write("Enter amount: ");
-            string amount = Console.ReadLine();
+            string input = Console.ReadLine();
 
-            Console.WriteLine($"You turned {amount} into chips.");
-            Console.ReadKey();
+            if (int.TryParse(input, out int amount))
+            {
+                _chips += amount;
+                Console.WriteLine($"You now have {_chips} chips.");
+            }
+            else
+            {
+                Console.WriteLine("Invalid input, please enter a valid number.");
+            }
+
+            Console.ReadKey(); 
         }
     }
 }
