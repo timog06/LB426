@@ -39,7 +39,7 @@ namespace GrandCasinoLB
             }
         }
 
-        private void PlayGame()
+        public void PlayGame()
         {
             Console.Clear();
             Console.WriteLine("Roulette (1) / Slot Machine (2)");
