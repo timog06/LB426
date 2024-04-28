@@ -12,14 +12,15 @@
 |2.1|Hoch|Als Spieler möchte ich Slot Machines spielen können.|
 |3.1|Hoch|Als Spieler möchte ich Roulette spielen können.|
 |4.1|Hoch|Als Spieler möchte ich, dass mein Geld über eine Session bleibt, aber nicht gespeichert wird nach dem beenden der Applikation.|
-|5.1|         |Als Developer möchte ich, dass es so programmiert ist, dammit ich einfach kann weitere Spiele hinzufügen.|
 
 ## Scrum Board
 
 | Backlog | To Do | In Progress | Testing | Done |
 | ------- | ----- | ----------- | ------- | ---- |
-|         |1.4    |1.1          |         |      |
-|         |1.5    |1.2          |         |      |
-|         |2.1    |1.3          |         |      |
-|         |       |3.1          |         |      |
-
+|         |3.1    |1.5          |         |1.1|
+|         |       |             |         |1.2|
+|         |       |             |         |1.3|
+|         |       |             |         |1.4|
+|         |       |             |         |2.1|
+|         |       |             |         |      |
+  
