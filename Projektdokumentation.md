@@ -25,7 +25,6 @@ von Julius Burlet und Timo Goedertier
 |         |       |             |         |2.1|
 |         |       |             |         |4.1|
 |         |       |             |         |1.5|
-|         |       |             |         |   |
 
 
 ## Realisation
