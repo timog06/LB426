@@ -1,10 +1,13 @@
-﻿namespace GrandCasinoLB
+﻿using System;
+
+namespace GrandCasinoLB
 {
-    internal class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CasinoMenu casino = new CasinoMenu();
+            casino.Run();
         }
     }
 }
