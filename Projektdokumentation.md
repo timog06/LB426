@@ -1,6 +1,8 @@
 # Projektdokumentation
 
-## User Stories (Story Cards)
+von Julius Burlet und Timo Goedertier
+
+## User Stories
 
 | ID | Priorität | Wer/Was/warum |
 | ------- | ------- | ------- | 
@@ -11,14 +13,18 @@
 |1.5|Tief|Als Spieler möchte ich jederzeit zurück zum Menu kommen können.
 |2.1|Hoch|Als Spieler möchte ich Slot Machines spielen können.|
 |3.1|Hoch|Als Spieler möchte ich Roulette spielen können.|
-|4.1|         |         |
-|5.1|         |Als Developer möchte ich, dass es so programmiert ist, dammit ich einfach kann weitere Spiele hinzufügen.|
+|4.1|Hoch|Als Spieler möchte ich, dass mein Geld über eine Session bleibt, aber nicht gespeichert wird nach dem beenden der Applikation.|
 
 ## Scrum Board
 
 | Backlog | To Do | In Progress | Testing | Done |
-| ------- | ------- | ------- | ------- | ------- |
-|         |         |         |         |         |
-|         |         |         |         |         |
-|         |         |         |         |         |
+| ------- | ----- | ----------- | ------- | ---- |
+|         |3.1    |             |         |1.1|
+|         |       |             |         |1.2|
+|         |       |             |         |1.3|
+|         |       |             |         |1.4|
+|         |       |             |         |2.1|
+|         |       |             |         |4.1|
+|         |       |             |         |1.5|
 
+  
