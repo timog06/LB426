@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading;
-
-namespace GrandCasinoLB
+﻿namespace GrandCasinoLB
 {
     public class SlotMachine
     {
@@ -72,7 +69,7 @@ namespace GrandCasinoLB
             switch (uniqueCount)
             {
                 case 1:
-                    if (slots[0] == 7) 
+                    if (slots[0] == 7)
                         return bet * 100; // If 3 slots are number 7
                     else
                         return bet * 10; // If 3 slots are the same

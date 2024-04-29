@@ -1,5 +1,4 @@
 ﻿using GrandCasinoLB.Roulette;
-using System;
 
 namespace GrandCasinoLB
 {
@@ -67,7 +66,7 @@ namespace GrandCasinoLB
             switch (gameChoice)
             {
                 case "1":
-                    //PlayRoulette();
+                    PlayRoulette();
                     break;
                 case "2":
                     PlaySlotMachine();
@@ -78,7 +77,7 @@ namespace GrandCasinoLB
                     break;
             }
         }
-        
+
         private void PlayRoulette()
         {
             if (_chipsObservable.Chips < 0)
@@ -91,7 +90,7 @@ namespace GrandCasinoLB
             RouletteGame roulette = new RouletteGame(_chipsObservable);
             roulette.PlayRoulette();
         }
-        
+
 
         private void PlaySlotMachine()
         {
