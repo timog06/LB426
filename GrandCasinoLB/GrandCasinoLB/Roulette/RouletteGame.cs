@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GrandCasinoLB.Roulette
+﻿namespace GrandCasinoLB.Roulette
 {
 
     // Receiver
@@ -44,10 +38,22 @@ namespace GrandCasinoLB.Roulette
 
         public void PlayRoulette()
         {
-            PlaceBet();
-            Payout(spinCommand.Execute());
+            do
+            {
+                PlaceBet();
+                Payout(spinCommand.Execute());
 
-
+                Console.WriteLine("Press (1) to go back to the menu or press Enter to play again.");
+                string userChoice = Console.ReadLine();
+                if (userChoice == "1")
+                {
+                    return;
+                }
+                else
+                {
+                    Console.Clear();
+                }
+            } while (true);
         }
 
         public void PlaceBet()
@@ -67,14 +73,14 @@ namespace GrandCasinoLB.Roulette
                     {
                         Console.WriteLine("Please Type a bet amount: ");
                         amount = Console.ReadLine();
-                        
-                    }while(!IsAmountValid(amount));
+
+                    } while (!IsAmountValid(amount));
                     Bet = Convert.ToInt32(amount);
                 }
                 _chipsObservable.Chips -= Bet;
                 return;
             } while (true);
-            
+
         }
         public void Payout(int number)
         {
