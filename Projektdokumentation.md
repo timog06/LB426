@@ -19,12 +19,25 @@ von Julius Burlet und Timo Goedertier
 
 | Backlog | To Do | In Progress | Testing | Done |
 | ------- | ----- | ----------- | ------- | ---- |
-|         |3.1    |             |         |1.1|
+|         |       |             |         |1.1|
 |         |       |             |         |1.2|
 |         |       |             |         |1.3|
 |         |       |             |         |1.4|
 |         |       |             |         |2.1|
 |         |       |             |         |4.1|
 |         |       |             |         |1.5|
+|         |       |             |         |3.1|
 
-  
+
+## Realisation
+
+| US-ID | Datum | Von |
+| ----- | ----- | --- |
+| 1.1   |27.04.2024|Timo Goedertier|
+| 1.2   |27.04.2024|Timo Goedertier|
+| 1.3   |27.04.2024|Timo Goedertier|
+| 1.4   |27.04.2024|Timo Goedertier|
+| 1.5   |27.04.2024|Timo Goedertier|
+| 2.1   |28.04.2024|Timo Goedertier|
+| 3.1   |29.04.2024|Julius Burlet|
+| 4.1   |28.04.2024|Timo Goedertier|
