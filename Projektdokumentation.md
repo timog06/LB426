@@ -73,3 +73,22 @@ Durch diese Entkopplung können beliebig viele Beobachter an der `ChipsObservabl
 ## Command-Pattern
 
 
+
+## Retrospektive
+
+### Hindernisse
+
+-
+
+-
+
+-
+
+### Lösungen
+
+-
+
+-
+
+-
+
