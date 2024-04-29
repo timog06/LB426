@@ -19,10 +19,12 @@ von Julius Burlet und Timo Goedertier
 
 | Backlog | To Do | In Progress | Testing | Done |
 | ------- | ----- | ----------- | ------- | ---- |
-|         |       |3.1          |         |1.1|
-|         |       |1.2          |         |1.3|
+|         |       |             |         |1.1|
+|         |       |             |         |1.2|
+|         |       |             |         |1.3|
 |         |       |             |         |1.4|
 |         |       |             |         |2.1|
+|         |       |             |         |3.1|
 |         |       |             |         |4.1|
 |         |       |             |         |1.5|
 
@@ -46,7 +48,7 @@ Da J. Burlet ein Problem mit Visual Studio 2022 hatte, wegen der Lizenz der BBB 
 | US-ID | Datum | Von |
 | ----- | ----- | --- |
 | 1.1   |27.04.2024|Timo Goedertier|
-| 1.2   |29.04.2024|Timo Goedertier|
+| 1.2   |29.04.2024|Julius Burlet|
 | 1.3   |27.04.2024|Timo Goedertier|
 | 1.4   |27.04.2024|Timo Goedertier|
 | 1.5   |27.04.2024|Timo Goedertier|
