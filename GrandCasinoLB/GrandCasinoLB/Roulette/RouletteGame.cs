@@ -12,19 +12,18 @@ namespace GrandCasinoLB.Roulette
     {
         private ChipsObservable _chipsObservable;
         private static Dictionary<int, string> _numberColorMap;
-        SpinCommand spinCommand = new SpinCommand(rouletteTable);
+        private SpinCommand spinCommand;
         private static RouletteTable rouletteTable;
 
         public string BetType { get; set; }
-
         public int Bet { get; set; }
-        
-
 
         public RouletteGame(ChipsObservable chipsObservable)
         {
             _chipsObservable = chipsObservable;
             InitializeNumberColorMap();
+            rouletteTable = new RouletteTable();
+            spinCommand = new SpinCommand(rouletteTable);
         }
 
         private static void InitializeNumberColorMap()
