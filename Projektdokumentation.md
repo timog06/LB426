@@ -30,6 +30,8 @@ von Julius Burlet und Timo Goedertier
 
 ## Aufteilungs Planung
 
+Die Aufteilung hatte keine Strategie, wir haben uns einfach gedacht, wer möchte was machen. Das einzige, was kein Zufall war, war wer das Roulette und wer die Slot Machine macht. Da hat Julius Roulette gewählt und Timo hat sich Slot Machine ausgesucht.
+
 | US-ID | Bis        | Wer             |
 | ----- | ---------- | --------------- |
 | 1.1   | 29.04.2024 | Timo Goedertier |
