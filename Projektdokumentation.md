@@ -19,14 +19,14 @@ von Julius Burlet und Timo Goedertier
 
 | Backlog | To Do | In Progress | Testing | Done |
 | ------- | ----- | ----------- | ------- | ---- |
-|         |       |             |         |1.1|
-|         |       |             |         |1.2|
+|         |       |3.1          |         |1.1|
+|         |       |1.2          |         |   |
 |         |       |             |         |1.3|
 |         |       |             |         |1.4|
 |         |       |             |         |2.1|
 |         |       |             |         |4.1|
 |         |       |             |         |1.5|
-|         |       |             |         |3.1|
+|         |       |             |         |   |
 
 
 ## Realisation
