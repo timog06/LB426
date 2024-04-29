@@ -32,10 +32,22 @@ von Julius Burlet und Timo Goedertier
 | US-ID | Datum | Von |
 | ----- | ----- | --- |
 | 1.1   |27.04.2024|Timo Goedertier|
-| 1.2   |27.04.2024|Timo Goedertier|
+| 1.2   |29.04.2024|Timo Goedertier|
 | 1.3   |27.04.2024|Timo Goedertier|
 | 1.4   |27.04.2024|Timo Goedertier|
 | 1.5   |27.04.2024|Timo Goedertier|
 | 2.1   |28.04.2024|Timo Goedertier|
 | 3.1   |29.04.2024|Julius Burlet|
 | 4.1   |28.04.2024|Timo Goedertier|
+
+## Test Driven Development (TDD)
+
+
+
+## Observer-Pattern
+
+
+
+## Command-Pattern
+
+
