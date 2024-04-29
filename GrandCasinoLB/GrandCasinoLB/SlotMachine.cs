@@ -72,7 +72,10 @@ namespace GrandCasinoLB
             switch (uniqueCount)
             {
                 case 1:
-                    return bet * 10; // If all slots are the same
+                    if (slots[0] == 7) 
+                        return bet * 100; // If 3 slots are number 7
+                    else
+                        return bet * 10; // If 3 slots are the same
                 case 2:
                     return bet * 2; // If two slots are the same
                 default:
