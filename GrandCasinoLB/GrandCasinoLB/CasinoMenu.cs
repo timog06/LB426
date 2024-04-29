@@ -87,13 +87,13 @@ namespace GrandCasinoLB
                 return;
             }
 
-            SlotMachine slotMachine = new SlotMachine(_chipsObservable.Chips);
+            SlotMachine slotMachine = new SlotMachine(_chipsObservable);
             slotMachine.PlayGame();
             int winnings = slotMachine.CalculateWinnings(new int[3], 10);
             _chipsObservable.Chips += winnings;
         }
 
-        private void Bank()
+        public void Bank()
         {
             Console.Clear();
             Console.WriteLine("How much money do you want to turn into chips?");
