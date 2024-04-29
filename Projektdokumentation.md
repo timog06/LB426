@@ -139,16 +139,16 @@ Insgesamt haben wir versucht, die SOLID-Prinzipien zu berücksichtigen, aber es 
 
 ### Hindernisse
 
-- 
+- **Zusammenarbeit** Wir konnten zuerst schwieriger zusammen arbeiten, da Julius's Visual Studio Lizenz abgelaufen ist und er so nicht von Anfang an der Software arbeiten.
 
-- 
+- **Kommunikation** Wir haben uns am Anfang misverstanden und haben so an verschiedenen Tagen arbeiten wollen.
 
--
+- **Code-Richtlinien** Wir haben verschiedene Benennungen benutzt.
 
 ### Lösungen
 
-- 
+- Julius musste sich eine Community Version von Visual Studio herunterladen.
 
-- 
+- Wir können Erinnerungen von Nachrichten in den Kalender schreiben.
 
--
+- Wir hätten uns absprechen können, wie wir die Sachen benennen.
