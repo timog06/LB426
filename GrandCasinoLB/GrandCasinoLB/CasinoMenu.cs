@@ -24,7 +24,8 @@ namespace GrandCasinoLB
             {
                 Console.Clear();
                 Console.Title = "Grand Casino LB";
-                Console.WriteLine($"Welcome to Grand Casino LB! You have {_chipsObservable.Chips} chips.");
+                Console.WriteLine("Welcome to Grand Casino LB!");
+                Console.WriteLine($"You currently have {_chipsObservable.Chips} chips.");
                 Console.WriteLine("1. Play");
                 Console.WriteLine("2. Bank");
                 Console.WriteLine("3. Quit");
@@ -65,8 +66,7 @@ namespace GrandCasinoLB
             switch (gameChoice)
             {
                 case "1":
-                    Console.WriteLine("Roulette is currently unavailable.");
-                    Console.ReadKey();
+                    PlayRoulette();
                     break;
                 case "2":
                     PlaySlotMachine();
@@ -77,6 +77,22 @@ namespace GrandCasinoLB
                     break;
             }
         }
+        /*
+        private void PlayRoulette()
+        {
+            if (_chipsObservable.Chips < 0)
+            {
+                Console.WriteLine("You can't play Roulette without any chips.");
+                Console.ReadKey();
+                return;
+            }
+
+            Roulette roulette = new Roulette(_chipsObservable);
+            roulette.PlayGame();
+            int winnings = roulette.CalculateWinnings(new int[3], 10);
+            _chipsObservable.Chips += winnings;
+        }
+        */
 
         private void PlaySlotMachine()
         {
