@@ -72,6 +72,10 @@ Durch diese Entkopplung können beliebig viele Beobachter an der `ChipsObservabl
 
 ## Command-Pattern
 
+1
+
+## SOLID-Kriterien
+
 
 
 ## Retrospektive
