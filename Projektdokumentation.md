@@ -56,6 +56,14 @@ Da J. Burlet ein Problem mit Visual Studio 2022 hatte, wegen der Lizenz der BBB 
 
 ## Test Driven Development (TDD)
 
+### Timo
+
+Ich konnte gut mit TDD arbeiten und es hat teils auch sehr geholfen es so zu machen. Das einzige Problem, welches ich habe, ist, dass meine Unit Tests versuchen Konsole-Interaktionen zu testen, wobei dies bei Unit Tests nicht möglich ist.
+
+Erklärung von ChatGPT: https://chat.openai.com/share/421616bc-0a81-445e-bd0f-fc5078af3193
+
+### Julius
+
 
 
 ## Observer-Pattern
