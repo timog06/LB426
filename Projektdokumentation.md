@@ -108,7 +108,32 @@ zwischen einem Befehlsobjekt `ICommand` und den Empfängern
 
 ## SOLID-Kriterien
 
+Einzelne Verantwortlichkeit (Single Responsibility Principle - SRP):
+- Die Klassen `CasinoMenu`, `RouletteGame`, `SlotMachine` und `RouletteTable` haben jeweils eine klar definierte Verantwortung und sollten das SRP nicht zu verletzen.
 
+Open/Closed Prinzip (Open/Closed Principle - OCP):
+- Die Verwendung des Command-Musters in `SpinCommand` und `ICommand` ermöglicht eine Erweiterbarkeit, indem neue Befehle hinzugefügt werden können, ohne den bestehenden Code zu ändern.
+- Das Switch-Case von `CasinoMenu` erlaubt es, wenn gebraucht, neue Spiele für das Casino und danach kann man einfach eine Klasse für die Initialisierung hinzufügen, wie `PlaySlotMachine()` und `PlayRoulette`.
+
+Liskov-Substitutionsprinzip (Liskov Substitution Principle - LSP):
+- Wir haben keine Vererbungsbeziehungen vorhanden benutzt, damit ist das LSP nicht unmittelbar relevant.
+
+Interface-Segregationsprinzip (Interface Segregation Principle - ISP):
+- Das `ICommand`-Interface ist klein und fokussiert, was das ISP erfüllt.
+- Genau so ist auch `IChipsObserver` klein gehalten mit nur einer Methode.
+
+Dependency Inversion Prinzip (Dependency Inversion Principle - DIP):
+- Die Verwendung von Dependency Injection in `CasinoMenu` und `RouletteGame` ermöglicht es, die Abhängigkeiten von der konkreten Implementierung zu trennen, indem Abstraktionen wie `ChipsObservable` und `ICommand` verwendet werden. Dies erfüllt das DIP.
+
+Mögliche Verbesserungen:
+
+1. **Liskov-Substitutionsprinzip (LSP)**: Obwohl in der bereitgestellten Software keine Vererbungsbeziehungen vorhanden sind, könnte das LSP in Zukunft relevant werden. Wenn Vererbung eingeführt wird, sollte sichergestellt werden, dass abgeleitete Klassen die Verhaltensweisen ihrer Basisklassen nicht verletzen. Beispielsweise könnte eine abgeleitete Klasse von `RouletteGame` für eine neue Spielvariante erstellt werden. In diesem Fall sollte die abgeleitete Klasse die Schnittstelle der Basisklasse vollständig implementieren und keine Verletzungen der Vor- und Nachbedingungen verursachen.
+
+2. **Entkopplung und Erweiterbarkeit**: Die `RouletteGame`-Klasse könnte durch die Verwendung von Polymorphismus oder Strategien erweitert werden, um neue Spielarten des Roulette-Spiels hinzuzufügen. Beispielsweise könnte eine abstrakte Klasse oder ein Interface für verschiedene Roulette-Varianten erstellt werden, von denen `RouletteGame` ableitet oder implementiert.
+
+3. **Fehlerbehandlung**: Die Fehlerbehandlung könnte in einigen Fällen verbessert werden, indem mehr aussagekräftige Fehlermeldungen ausgegeben und Ausnahmen geworfen werden, anstatt einfach auf die Eingabeaufforderung zurückzukehren. Dies würde die Benutzerfreundlichkeit erhöhen und die Fehlersuche erleichtern.
+
+Insgesamt haben wir versucht, die SOLID-Prinzipien zu berücksichtigen, aber es gibt definitiv Raum für Verbesserungen in Bezug auf Wartbarkeit, Erweiterbarkeit und Testbarkeit des Codes. Die oben genannten Punkte könnten dazu beitragen, den Code robuster, flexibler und einfacher zu warten zu machen.
 
 ## Retrospektive
 
