@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GrandCasinoLB.Roulette;
+using System;
 
 namespace GrandCasinoLB
 {
@@ -77,7 +78,7 @@ namespace GrandCasinoLB
                     break;
             }
         }
-        /*
+        
         private void PlayRoulette()
         {
             if (_chipsObservable.Chips < 0)
@@ -87,12 +88,10 @@ namespace GrandCasinoLB
                 return;
             }
 
-            Roulette roulette = new Roulette(_chipsObservable);
-            roulette.PlayGame();
-            int winnings = roulette.CalculateWinnings(new int[3], 10);
-            _chipsObservable.Chips += winnings;
+            RouletteGame roulette = new RouletteGame(_chipsObservable);
+            roulette.PlayRoulette();
         }
-        */
+        
 
         private void PlaySlotMachine()
         {

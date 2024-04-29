@@ -25,7 +25,8 @@ namespace GrandCasinoLB_TestProject
             // Arrange
             stringReader = new StringReader("100" + Environment.NewLine);
             Console.SetIn(stringReader);
-            var slotMachine = new SlotMachine();
+            var chipsObservable = new ChipsObservable();
+            var slotMachine = new SlotMachine(chipsObservable);
 
             // Act
             string output = GetConsoleOutput(() => slotMachine.PlayGame());
@@ -41,7 +42,8 @@ namespace GrandCasinoLB_TestProject
             // Arrange
             stringReader = new StringReader("100" + Environment.NewLine);
             Console.SetIn(stringReader);
-            var slotMachine = new SlotMachine();
+            var chipsObservable = new ChipsObservable();
+            var slotMachine = new SlotMachine(chipsObservable);
 
             // Act
             string output = GetConsoleOutput(() => slotMachine.PlayGame());
@@ -57,7 +59,8 @@ namespace GrandCasinoLB_TestProject
             // Arrange
             stringReader = new StringReader("100" + Environment.NewLine);
             Console.SetIn(stringReader);
-            var slotMachine = new SlotMachine();
+            var chipsObservable = new ChipsObservable();
+            var slotMachine = new SlotMachine(chipsObservable);
 
             // Act
             string output = GetConsoleOutput(() => slotMachine.PlayGame());
