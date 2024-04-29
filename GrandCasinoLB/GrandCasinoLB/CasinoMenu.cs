@@ -66,7 +66,7 @@ namespace GrandCasinoLB
             switch (gameChoice)
             {
                 case "1":
-                    PlayRoulette();
+                    //PlayRoulette();
                     break;
                 case "2":
                     PlaySlotMachine();
