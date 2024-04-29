@@ -80,7 +80,7 @@ Durch diese Entkopplung können beliebig viele Beobachter an der `ChipsObservabl
 
 ## Command-Pattern
 
-1
+
 
 ## SOLID-Kriterien
 
@@ -90,7 +90,7 @@ Durch diese Entkopplung können beliebig viele Beobachter an der `ChipsObservabl
 
 ### Hindernisse
 
--
+- 
 
 -
 
@@ -98,7 +98,7 @@ Durch diese Entkopplung können beliebig viele Beobachter an der `ChipsObservabl
 
 ### Lösungen
 
--
+- 
 
 -
 
