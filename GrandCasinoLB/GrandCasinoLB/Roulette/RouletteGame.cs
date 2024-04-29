@@ -41,7 +41,6 @@
             do
             {
                 PlaceBet();
-                Payout(spinCommand.Execute());
 
                 Console.WriteLine("Press (1) to go back to the menu or press Enter to play again.");
                 string userChoice = Console.ReadLine();
@@ -58,61 +57,83 @@
 
         public void PlaceBet()
         {
+        Dictionary<string, int> bets = new Dictionary<string, int>();
+
             do
             {
-                Console.WriteLine("Please type in the betting type [b] " +
-                "if you want to bet on black and [r] if you want to bet on red" +
-                "or just any number from 0 - 36 if you want to bet on a number.");
+                Console.WriteLine("Please type in the betting type [b] if you want to bet on black, [r] if you want to bet on red, or just any number from 0 - 36 if you want to bet on a number. Type 'done' when finished.");
                 string betType = Console.ReadLine();
+
+                if (betType.ToLower() == "done")
+                {
+                    break;
+                }
 
                 if (IsBetValid(betType))
                 {
                     string amount;
-                    BetType = betType;
                     do
                     {
-                        Console.WriteLine("Please Type a bet amount: ");
+                        Console.WriteLine($"Please type a bet amount for {betType}: ");
                         amount = Console.ReadLine();
 
                     } while (!IsAmountValid(amount));
-                    Bet = Convert.ToInt32(amount);
+
+                    int bet = Convert.ToInt32(amount);
+                    _chipsObservable.Chips -= bet;
+
+                    if (bets.ContainsKey(betType))
+                    {
+                        bets[betType] += bet;
+                    }
+                    else
+                    {
+                        bets[betType] = bet;
+                    }
                 }
-                _chipsObservable.Chips -= Bet;
-                return;
             } while (true);
 
-        }
-        public void Payout(int number)
+        // Continue with the game if there are any bets placed
+        if (bets.Count > 0)
         {
-            if (BetType == "r")
+            Payout(spinCommand.Execute(), bets);
+        }
+}
+        public void Payout(int number, Dictionary<string, int> bets)
+        {
+            foreach (var bet in bets)
             {
-                if ("red" == _numberColorMap[number])
-                {
-                    _chipsObservable.Chips += 2 * Bet;
-                    Console.WriteLine("Congrats you have won!");
-                }
-                else return;
+                string betType = bet.Key;
+                int betAmount = bet.Value;
+
+                if (betType == "r")
+        {
+            if ("red" == _numberColorMap[number])
+            {
+                _chipsObservable.Chips += 2 * betAmount;
+                Console.WriteLine($"You won {2 * betAmount} chips on the red bet!");
             }
-            else if (BetType == "b")
+        }
+        else if (betType == "b")
+        {
+            if ("black" == _numberColorMap[number])
             {
-                if ("black" == _numberColorMap[number])
-                {
-                    _chipsObservable.Chips += 2 * Bet;
-                    Console.WriteLine("Congrats you have won!");
-                }
-                else { return; }
+                _chipsObservable.Chips += 2 * betAmount;
+                Console.WriteLine($"You won {2 * betAmount} chips on the black bet!");
             }
-            else
+        }
+        else
+        {
+            int numberBet = Convert.ToInt32(betType);
+            if (numberBet == number)
             {
-                if (Convert.ToInt32(BetType) == number)
-                {
-                    _chipsObservable.Chips += 35 * Bet;
-                    Console.WriteLine("Congratulations you have won!");
-                }
-                else
-                {
-                    Console.WriteLine("You have lost.");
-                    return;
+                _chipsObservable.Chips += 35 * betAmount;
+                    Console.WriteLine($"Congratulations! You won {35 * betAmount} chips on the number {numberBet} bet!");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"You lost {betAmount} chips on the number {numberBet} bet.");
+                    }
                 }
             }
         }
