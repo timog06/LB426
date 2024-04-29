@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace GrandCasinoLB
 {
-    internal class SlotMachine
+    public class SlotMachine
     {
         private const int FixedBet = 10;
         private const int MaxSlotValue = 9;
