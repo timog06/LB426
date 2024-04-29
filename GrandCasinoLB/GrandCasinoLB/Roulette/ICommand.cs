@@ -1,7 +1,7 @@
-namespace GrandCasinoLB.Roulette
+﻿namespace GrandCasinoLB.Roulette
 {
-    public interface ICommand
+    interface ICommand
     {
-        void Execute();
+        int Execute();
     }
 }
